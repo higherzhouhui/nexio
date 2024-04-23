@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#__next {
+  display: flex;
+  flex-direction: column;
+}
+
+.app {
+  overflow: hidden auto;
+  background: rgb(1, 1, 2);
+  height: calc(100vh);
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+
+html {
+  overflow-y: scroll;
+  font-size: 16px;
+  @media screen and (max-width: 900px) {
+    font-size: 12px;
+  }
+}
+
+
+:root {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#root {
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: absolute;
+  width: 100vw;
+}
+
+body {
+  background-color: #010102;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Montserrat;
+  font-size: 16px;
+  margin: 0;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+code {
+  font-family:
+    source-code-pro,
+    Menlo,
+    Monaco,
+    Consolas,
+    Courier New,
+    monospace;
+}
+
+a,
+a:active,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  background: hsla(0, 0%, 100%, 0.2);
+  height: 3px;
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-track {
+  border-radius: 0;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  width: 0;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}

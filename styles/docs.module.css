@@ -1,0 +1,339 @@
+.container {
+    width: 1031px;
+    margin-top: 95px;
+}
+
+
+
+.title {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat-bold;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 70px;
+}
+
+.subTitle {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.content {
+    display: flex;
+    margin-top: 74px;
+}
+
+.content .left {
+    flex-direction: column;
+    justify-content: space-around;
+    display: flex;
+    color: rgba(255, 255, 255, 0.3);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 33px;
+    width: 197px;
+    height: 550px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: rgb(25, 25, 25);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 94px 0px;
+}
+
+.content .right {
+    margin-left: 43px;
+    width: 790px;
+    height: 550px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 1px solid rgb(61, 61, 61);
+    background: rgb(25, 25, 25);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 94px 0px;
+}
+
+.left .item {
+    cursor: pointer;
+}
+
+.active {
+    color: rgb(167, 194, 4);
+    font-weight: 800;
+}
+
+.contentWrap {
+    width: 667px;
+    padding-left: 35px;
+    padding-top: 38px;
+}
+
+.right .inner {
+    display: flex;
+}
+
+.right .inner .smallWrap {
+    width: 686px;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin-left: 10px;
+}
+
+.table {
+    display: flex;
+    margin-top: 45px;
+}
+
+.tableLeft {
+    flex: 1;
+    height: 503px;
+    background: rgba(167, 194, 4, 0.1);
+    border-right: 1px solid rgb(61, 61, 61);
+    border-bottom: 1px solid rgb(61, 61, 61);
+    border-image: initial;
+    border-top: none;
+    border-left: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.tableItem {
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    height: 65px;
+    line-height: 65px;
+    border-right: 1px solid rgb(61, 61, 61);
+    border-top: 1px solid rgb(61, 61, 61);
+    padding-left: 37px;
+}
+
+.tableRight {
+    flex: 1;
+    height: 503px;
+    background: rgb(25, 25, 25);
+    border-top: none;
+    border-left: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.tableItem:nth-child(1) {
+    background-color: red;
+}
+
+
+
+.tableRightItem {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    height: 65px;
+    border-right: 1px solid rgb(61, 61, 61);
+    border-top: 1px solid rgb(61, 61, 61);
+    padding-left: 37px;
+    display: flex;
+    align-items: center;
+}
+
+.table .leftTitle {
+    width: 392px;
+    height: 50px;
+    line-height: 50px;
+    text-align: left;
+    color: rgb(167, 194, 4);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 800;
+    padding-left: 37px;
+}
+
+.table .rightTitle {
+    width: 392px;
+    padding-left: 37px;
+    text-align: left;
+    color: rgb(167, 194, 4);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 800;
+    height: 50px;
+    line-height: 50px;
+}
+
+.wrap3 {
+    width: 667px;
+    padding-left: 35px;
+    padding-top: 38px;
+}
+
+.wrap3Item {
+    display: flex;
+}
+
+.wrap3ItemsInner {
+    width: 686px;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin-left: 10px;
+}
+
+.wrap4Title {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media (max-width:1200px) {
+    .wrap3 {
+        width: 100%;
+        padding-left: 35px;
+        padding-top: 38px;
+    }
+
+    .wrap3Item {
+        display: flex;
+    }
+
+    .wrap3ItemsInner {
+        width: calc(100vw - 100px);
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        margin-left: 10px;
+    }
+
+    .container {
+        width: calc(100% - 30px);
+        margin-top: 95px;
+    }
+
+    .title {
+        color: rgb(255, 255, 255);
+        font-family: Montserrat-bold;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+    }
+
+    .subTitle {
+        margin-top: 22px;
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .content {
+        margin-top: 74px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .content .left {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: auto;
+        width: 100%;
+        -webkit-box-pack: center;
+        justify-content: center;
+        color: rgb(142, 142, 142);
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        background: none;
+        padding-left: 0;
+    }
+
+    .content .left .item {
+        border-radius: 4px;
+        padding: 7px 21px 11px;
+        border: 1px solid rgb(142, 142, 142);
+    }
+
+    .content .right {
+        margin-left: 0;
+        margin-top: 48px;
+        width: 100%;
+        height: auto;
+        padding-bottom: 18px;
+        border-radius: 20px;
+        border: 1px solid rgb(61, 61, 61);
+        background: rgb(25, 25, 25);
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 94px 0px;
+    }
+
+    .contentWrap {
+        width: 100%;
+        padding-left: 35px;
+        padding-top: 38px
+    }
+
+    .right .inner {
+        display: flex;
+    }
+
+    .right .inner .smallWrap {
+        width: calc(100vw - 100px);
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        margin-left: 10px;
+    }
+
+    .tableLeft, .tableRight {
+        width: 47vw;
+    }
+
+    .tableItem {
+        width: 100%;
+        height: 100%;
+        line-height: normal;
+        display: flex;
+        align-items: center;
+    }
+
+    .tableRightItem {
+        width: 100%;
+        height: 100%;
+        line-height: normal;
+        display: flex;
+        align-items: center;
+    }
+
+}

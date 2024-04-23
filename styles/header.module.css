@@ -1,0 +1,86 @@
+.header {
+    z-index: 5;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 18px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: 1200px) {
+        width: 100%;
+        padding: 18px 24px;
+    }
+    
+}
+.left {
+    display: flex;
+    cursor: pointer;
+}
+.logo {
+    width: 50px;
+    object-fit: contain;
+}
+.titlelogo {
+    width: 144px;
+    object-fit: contain;
+    margin-left: 10px;
+}
+.right {
+    position: relative;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    gap: 30px;
+}
+.rightContent {
+    display: flex;
+    color: rgb(167, 194, 4);
+    font-size: 1.1rem;
+    padding: 4px 0;
+    border: 1px solid rgb(167, 194, 4);
+    border-radius: 6px;
+    position: relative;
+    min-width: 90px;
+    justify-content: center;
+    cursor: pointer;
+}
+.rightContent p {
+    margin-right: 3px;
+}
+.rightContent img {
+    width: 10px;
+    object-fit: contain;
+    transition: all 0.2s;
+}
+.right .selects {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(167, 194, 4);
+    color: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: all 0.2s;
+    z-index: 10;
+}
+.right .list {
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.right .list:hover {
+    color: rgb(167, 194, 4);
+    background-color: #fff;
+}
+
+.mask {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
